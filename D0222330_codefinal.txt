@@ -1,0 +1,47 @@
+1. database no sql dengan model key-value
+
+use keyValueDB
+db.kvCollection.insertMany([
+  { key: "nama", value: "Yulia Elisabeth" },
+  { key: "umur", value: 22 },
+  { key: "kota", value: "Majene" },
+  { key: "status", value: "Mahasiswa" },
+  { key: "jurusan", value: "Teknik Informatika" }
+])
+db.kvCollection.find().pretty()
+
+2. database no sql dengan model wide-coloumn
+
+use widecolumnDB
+db.mahasiswa.insertMany([
+  {
+    id: "mhs1",
+    nama: "Elis",
+    nim: "222330",
+    kota: "Mamuju"
+  },
+  {
+    id: "mhs2",
+    nama: "Elda",
+    nim: "222331",
+    kota: "Mamuju"
+  },
+  {
+    id: "mhs3",
+    nama: "Enggith",
+    nim: "222332",
+    kota: "Majene"
+  },
+  {
+    id: "mhs4",
+    nama: "Elma",
+    nim: "222333",
+    kota: "Majene"
+  },
+  {
+    id: "mhs5",
+    nama: "Elviani",
+    nim: "222334",
+    kota: "Mamuju"
+  }
+])
